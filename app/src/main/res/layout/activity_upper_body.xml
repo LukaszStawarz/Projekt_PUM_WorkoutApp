@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpperBodyActivity"
+    android:background="@color/lightGrey">
+
+<RelativeLayout
+    android:id="@+id/rlTimer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvCwiczenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:text="Ćwiczenia na górną partię ciała."
+        android:textColor="@color/text_color_grey"
+        android:textSize="28sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/tvZaczynamy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCwiczenie"
+        android:layout_marginBottom="-80dp"
+        android:layout_centerInParent="true"
+        android:text="Przygotuj się!"
+        android:textColor="@color/text_color_grey"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:gravity="center"
+         />
+
+    <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvZaczynamy"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="-280dp"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/text_color_grey"
+            android:textSize="36sp"
+            android:textStyle="bold"
+             />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvUpcomingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Następne ćwiczenie!"
+        android:textSize="30dp"
+        android:textColor="@color/text_color_grey"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvExerciseName"
+        tools:visibility="visible">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvUpCommingExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/text_color_grey"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpcomingLabel"
+        tools:visibility="visible">
+    </TextView>
+
+<ImageView
+    android:id="@+id/ivImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_upper1"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/tvExerciseName"
+    app:layout_constraintTop_toTopOf="parent">
+</ImageView>
+    <TextView
+        android:id="@+id/tvExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ExerciseName"
+        android:textSize="30dp"
+        android:textColor="@color/text_color_grey"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        tools:visibility="visible">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x powtórzeń"
+        android:textSize="30dp"
+        android:textColor="@color/text_color_grey"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExerciseName"
+        tools:visibility="visible">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rlTimerExercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+        <TextView
+            android:id="@+id/tvCwiczenieExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="144dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_grey"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvStartExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvCwiczenieExercise"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="-80dp"
+            android:gravity="center"
+            android:text="Przygotuj się!"
+            android:textColor="@color/text_color_grey"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTimerExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvStartExercise"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="-280dp"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="@color/text_color_grey"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

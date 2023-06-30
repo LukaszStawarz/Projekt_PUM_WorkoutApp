@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WorkoutApp</string>
+    <string name="gorna_partia">Górna partia</string>
+    <string name="dolna_partia">dolna partia</string>
+    <string name="brzuch">brzuch</string>
+    <string name="cardio">cardio</string>
+</resources>
