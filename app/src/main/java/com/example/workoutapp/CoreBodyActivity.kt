@@ -78,7 +78,7 @@ class CoreBodyActivity : AppCompatActivity() {
 
 
     private fun setBreakTimer(){
-        breakTimer = object : CountDownTimer(3000, 1000){
+        breakTimer = object : CountDownTimer(5000, 1000){
             override fun onTick(p0: Long){
                 breakProgress++
                 binding?.tvTimer?.text = (6 - breakProgress).toString()
@@ -90,7 +90,7 @@ class CoreBodyActivity : AppCompatActivity() {
         }.start()
     }
     private fun setExerciseTimer(){
-        exerciseTimer = object : CountDownTimer(3000, 1000){
+        exerciseTimer = object : CountDownTimer(60000, 1000){
             override fun onTick(p0: Long){
                 exerciseProgress++
                 binding?.tvTimerExercise?.text = (61 - exerciseProgress).toString()
