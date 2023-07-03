@@ -12,8 +12,9 @@
     <color name="colorPrimaryDark">#B2212121</color>
     <color name="lightGrey">#BFBDBD</color>
     <color name="frontColor">#D93344</color>
-    <color name="btn_color">#9E5FA8</color>
-    <color name="text_color_grey">#363A43</color>
+    <color name="btn_color">#c377d6</color>
+    <color name="text_color">#1731a6</color>
+    <color name="bc_color">#f8cced</color>
     <color name="toolbar_color_control_normal">#000000</color>
 
 

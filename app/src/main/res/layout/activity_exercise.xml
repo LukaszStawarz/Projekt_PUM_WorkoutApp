@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:fillViewport = "true"
     tools:context=".ExerciseActivity"
-    android:background="@color/white">
+    android:background="@color/bc_color">
 
 
     <LinearLayout
@@ -27,9 +27,9 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="Wybierz patrię ciała którą chcesz ćwiczyć."
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnUpperBody"
@@ -39,6 +39,7 @@
             android:background="@drawable/btn_radius"
             android:gravity="center"
             android:text="@string/gorna_partia"
+            android:textColor="@color/text_color"
             android:textStyle="bold"/>
 
         <Button
@@ -48,6 +49,7 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="@string/dolna_partia"
+            android:textColor="@color/text_color"
             android:textStyle="bold"
             android:background="@drawable/btn_radius"
             />
@@ -60,6 +62,7 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="@string/brzuch"
+            android:textColor="@color/text_color"
             android:textStyle="bold"
             android:background="@drawable/btn_radius"/>
 
@@ -70,6 +73,7 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="@string/cardio"
+            android:textColor="@color/text_color"
             android:textStyle="bold"
             android:background="@drawable/btn_radius"/>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UpperBodyActivity"
-    android:background="@color/lightGrey">
+    android:background="@color/bc_color">
 
     <RelativeLayout
         android:id="@+id/rlTimer"
@@ -20,7 +20,7 @@
             android:layout_marginTop="144dp"
             android:gravity="center"
             android:text="Ćwiczenia na brzuch."
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="28sp"
             android:textStyle="bold"
             />
@@ -33,7 +33,7 @@
             android:layout_marginBottom="-80dp"
             android:layout_centerInParent="true"
             android:text="Przygotuj się!"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="45sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -48,7 +48,7 @@
             android:layout_marginBottom="-280dp"
             android:gravity="center"
             android:text="5"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="36sp"
             android:textStyle="bold"
             />
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:text="Następne ćwiczenie!"
         android:textSize="30dp"
-        android:textColor="@color/text_color_grey"
+        android:textColor="@color/text_color"
         android:layout_alignParentTop="true"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30dp"
-        android:textColor="@color/text_color_grey"
+        android:textColor="@color/text_color"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:text="ExerciseName"
         android:textSize="30dp"
-        android:textColor="@color/text_color_grey"
+        android:textColor="@color/text_color"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:text="x powtórzeń"
         android:textSize="30dp"
-        android:textColor="@color/text_color_grey"
+        android:textColor="@color/text_color"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,7 +138,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="144dp"
             android:gravity="center"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="28sp"
             android:textStyle="bold"
             />
@@ -152,7 +152,7 @@
             android:layout_marginBottom="-80dp"
             android:gravity="center"
             android:text="Przygotuj się!"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="45sp"
             android:textStyle="bold" />
 
@@ -165,7 +165,7 @@
             android:layout_marginBottom="-280dp"
             android:gravity="center"
             android:text="60"
-            android:textColor="@color/text_color_grey"
+            android:textColor="@color/text_color"
             android:textSize="36sp"
             android:textStyle="bold"
             />
